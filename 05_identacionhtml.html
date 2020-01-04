@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pug/Jade</title>
+
+<!--
+
+
+	Tutorial:
+
+		Introducción a Jade (ahora llamado Pug) | https://www.youtube.com/watch?v=XcLiwuTMSwo&t=555s
+
+
+	Referencia del lenguaje:
+
+		https://pugjs.org/language/conditionals.html
+
+
+
+	Cascading Herencia:
+	___________________
+
+
+	Identación:
+
+	_también, podremos crear elementos ó etiquetas dentro de otras para lo cuál, al igual que sass, podremos hacer uso de la identación para indicar la herencia ó referenciar entre elementos padres y elementos hijos, ej:
+
+		nav
+
+			ul
+
+				li
+
+					a click aquí!
+
+
+	_de ésta manera, pug, preprocesará el html, de la siguiente manera:
+
+
+		<nav>
+		  <ul>
+		    <li><a>click aquí!</a></li>
+		  </ul>
+		</nav>
+
+
+	
+	Sentencia de Dos Puntos:
+	________________________
+
+	_más también, si no deseamos crear las tags, a través, del procedimiento de identación disponemos de otro método el cuál, consiste en relacionamiento entre elementos padres y elementos hijos a través, de dos puntos ":", ej:
+
+
+		nav: ul: li: a(href="#") item1 //siguiendo el ejemplo anterior
+
+
+
+	Excepciones de Identación:
+	__________________________
+
+	_para algunos casos en los cuáles, requiramos escribir texto identado u algotro contenido en el editor html, para tener así, una apreciación determinada sin que éste se convierta en una nueva etiqueta
+
+	_de ésta manera, pug, nos brinda dos opciones para lograr éste resultado, donde la primera es haciendo uso de la notación de punto "."
+
+
+	Primer Método:
+	______________
+
+	_entendiéndo así, que pug, convierte toda primera palabra identada en una etiqueta, debemos hacer uso entonces, de la sintaxis de punto para indicar que éste seguirá siendo un texto y no una nueva etiqueta
+
+	_así, como también, tendremos que identar el contenido ó texto para que así, entienda que éste será hijo del tag "<p>", en éste caso, ej:
+
+
+		section
+
+			p.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum est, rem rerum totam quo omnis recusandae, reprehenderit hic nam vitae, obcaecati quae tenetur nemo harum. Eveniet ab aut quidem. 
+
+
+
+	_entendiéndo así, que si no colocamos ".", despues de "p", en éste caso, entonces pug, interpretará que la palabra "hola", debe ser convertida una nueva etiqueta en el html, preprocesado
+
+
+
+		_ejemplo sin punto:
+
+			<section>
+				<p>
+					<Lorem>ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum est, rem rerum totam quo omnis recusandae, reprehenderit hic nam vitae, obcaecati quae tenetur nemo harum. Eveniet ab aut quidem.</Lorem>
+				</p>
+			</section>
+
+
+		_ejemplo con punto:
+
+			<section>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum est, rem rerum totam quo omnis recusandae, reprehenderit hic nam vitae, obcaecati quae tenetur nemo harum. Eveniet ab aut quidem.
+				</p>
+			</section>	
+
+
+
+	Segundo Método:
+	_______________
+
+	_y el segundo método consiste en la implementación de una barra ó "pipe", en el párrafo de texto identado de del tag, padre, en éste caso de "<p>"
+
+	_ésta barra vertical tendrá que estar seguida de un espacio, de ésta manera, a través, de éste método ya no tendremos que utilizar el punto seguido del tag, en éste caso "<p>", ejemplo:
+
+
+		section
+
+			p
+
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum est, rem rerum totam quo omnis recusandae, reprehenderit hic nam vitae, obcaecati quae tenetur nemo harum. Eveniet ab aut quidem.
+
+
+	_para que así, pug, pre procese lo siguiente:
+
+
+			<section>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatum est, rem rerum totam quo omnis recusandae, reprehenderit hic nam vitae, obcaecati quae tenetur nemo harum. Eveniet ab aut quidem.
+				</p>
+			</section>	
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+</head>
+
+<body>
+	
+</body>
+</html>

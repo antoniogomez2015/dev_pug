@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pug/Jade</title>
+
+<!--
+
+
+	Referencia y Documentación:
+	___________________________
+
+
+
+		Getting Started
+			https://pugjs.org/api/getting-started.html
+
+
+
+		Github
+			https://github.com/pugjs/pug
+
+
+
+
+		API Reference
+			https://pugjs.org/api/reference.html
+
+
+			
+
+		https://pugjs.org/language/conditionals.html
+
+
+
+
+	Introducción:
+	_____________
+
+	_pug, ó jade, nos permitirá la incorporación de automatismos y estructuras de control y de contenido de los lenguajes de programación, similar a lo que sass, ó less, con css, pero en éste caso, pug, lo hace con html
+
+	_lo cuál, lleva ha otro nivel el html, tanto en su creación lógica y mantenimiento entre otras posibilidades
+
+
+
+	Enmmet:
+	_______
+
+	NOTA: para que enmmet, funcione con pug, en sublime text, debemos de colocar ó indicar como lenguaje de trabajo no "pug", como por defecto si no "Jade/Jade"
+
+
+	_pug, permite la integración en enmmet, en éste caso con sublime text, para que así, tener la posibilidad de aprovechar todas las vengajas de auto ayuda de enmmet, en la creación de código html
+
+	_por ejemplo para la creación de un estructra básica html:
+
+			! + tab //signo de admiración + tab
+
+			_de ésta manera, se agregárá una nueva estructura html, base
+
+				<!DOCTYPE html>
+				html(lang="en")
+				head
+					meta(charset="UTF-8")
+					title Document
+				body			
+
+	_por ejemplo, para la creación de elemento de lista de forma automática:
+
+
+			ul>li*4 + tag
+
+			_para que así, se generen las tag, para pug, ej:
+
+				ul
+
+					li
+					li
+					li
+					li
+
+
+	_otro ejemplo de creación más complejo: 
+
+
+			ul>(li.item>a[href="#"]{item $})*10
+
+
+			_donde las operaciones complejas se aislan con paréntesis "()"
+
+			_las clases e identificaciones se concatenan con ".", ó "#"
+
+			_y el contenido en enmmet, se expresa entre llames "{}"
+
+			_y los tributos se expresan entre corchetes "[]"
+
+
+
+
+-->
+
+
+</head>
+
+<body>
+	
+</body>
+</html>

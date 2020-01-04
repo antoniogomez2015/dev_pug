@@ -1,0 +1,11 @@
+{
+  "name": "proof",
+  "version": "1.0.0",
+  "description": "proyecto de pug",
+  "main": "index.pug",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tonyGomez",
+  "license": "ISC"
+}
